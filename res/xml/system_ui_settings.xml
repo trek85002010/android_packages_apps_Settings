@@ -85,6 +85,11 @@
             android:fragment="com.android.settings.cyanogenmod.HaloControl"
             android:title="@string/halo_control_title" />
 
+	<PreferenceScreen
+        android:key="general_ui_settings"
+        android:fragment="com.android.settings.cyanogenmod.UserInterface"
+        android:title="@string/title_ui" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
