@@ -959,51 +959,14 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="remove_blacklist_entry">Do you want to remove this blacklist entry?</string>
     <string name="select_contact">Select contact</string>
 
-    <!-- Hardware tunables - Vibrator intensity -->
-    <string name="vibrator_intensity_title">Vibrator intensity</string>
-    <string name="vibrator_warning">Values higher than %1$d are not recommended</string>
-
-    <!-- Hardware tunables - Color calibration -->
-    <string name="color_calibration_title">Color calibration</string>
-    <string name="color_calibration_summary">Calibrate on-screen colors</string>
-    <string name="color_red_title">Red</string>
-    <string name="color_green_title">Green</string>
-    <string name="color_blue_title">Blue</string>
-
-    <!-- Hardware tunables - Key backlight -->
-    <string name="button_backlight_title">Backlight</string>
-    <string name="button_backlight_enabled">Illuminate buttons</string>
-    <string name="keyboard_backlight_enabled">Illuminate keyboard</string>
-    <string name="button_backlight_seekbar_title">Button brightness</string>
-    <string name="keyboard_backlight_seekbar_title">Keyboard brightness</string>
-    <string name="backlight_timeout_title">Illumination timeout</string>
-    <string name="backlight_timeout_unlimited">Don\'t turn off</string>
-    <plurals name="backlight_timeout_time">
-        <item quantity="one"><xliff:g id="seconds">%d</xliff:g> second</item>
-        <item quantity="other"><xliff:g id="seconds">%d</xliff:g> seconds</item>
-    </plurals>
-    <string name="backlight_summary_disabled">Disabled</string>
-    <string name="backlight_summary_enabled_with_timeout">Enabled for <xliff:g id="timeout">%s</xliff:g></string>
-    <string name="backlight_summary_enabled">Enabled</string>
-
-    <!-- Hardware tunables - Gamma calibration -->
-    <string name="gamma_tuning_title_head">Gamma calibration</string>
-    <string name="gamma_tuning_summary_head">Tweak gamma values</string>
-
-    <!--  Other device settings -->
-    <string name="more_device_controls_title">More\u2026</string>
-    <string name="more_device_settings_title">Other device options</string>
-    <string name="sensors_motors_title">Sensors &amp; motors</string>
-    <string name="display_calibration_title">Display calibration</string>
-
-    <!-- Quick access ribbon -->
-    <string name="category_quick_access">Quick Access ribbon</string>
-    <string name="title_quick_access">Show in drawer</string>
-    <string name="title_quick_access_linked">Linked layout</string>
-    <string name="summary_quick_access_linked">Use the same tiles and layout as the Quick Settings panel</string>
-
-    <!-- Font size sample text. This needs to be a very short string, as it is shown in
-    multiple font sizes in a limited amount of space. -->
-    <string name="font_size_sample">Sample</string>
+    <!-- Halo size -->
+    <string name="halo_size_title">HALO size</string>
+    <string name="halo_size_summary">Defines how big HALO is going to be</string>
+    <string name="halo_size_miniscule">Miniscule</string>
+    <string name="halo_size_small">Small</string>
+    <string name="halo_size_default">Default</string>
+    <string name="halo_size_large">Large</string>
+    <string name="halo_size_gigantic">Gigantic</string>
+    <string name="halo_size_monster">Monster</string>
 
 </resources>
