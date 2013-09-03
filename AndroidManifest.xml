@@ -1612,15 +1612,6 @@
                 android:label="@string/system_settings_title"
                 android:taskAffinity=""
                 android:excludeFromRecents="true">
-
-        <activity
-            android:name=".cyanogenmod.DensityChanger"
-            android:label="@string/lcd_density_wizard" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-            </intent-filter>
-        </activity>
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
