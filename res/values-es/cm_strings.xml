@@ -743,4 +743,13 @@ podrás crear una nueva línea con el fin de insertar puntos de control adiciona
     <string name="halo_state_summary">Agrupar aplicaciones en la lista Negra/Blanca de HALO</string>
     <string name="halo_state_black">Lista Negra</string>
     <string name="halo_state_white">Lista Blanca</string>
+    <!-- HALO size -->
+    <string name="halo_size_title">Tamaño de HALO</string>
+    <string name="halo_size_summary">Define como de grande será HALO</string>
+    <string name="halo_size_miniscule">Minúsculo</string>
+    <string name="halo_size_small">Pequeño</string>
+    <string name="halo_size_default">Defecto</string>
+    <string name="halo_size_large">Grande</string>
+    <string name="halo_size_gigantic">Gigante</string>
+    <string name="halo_size_monster">Monstruoso</string>
 </resources>
