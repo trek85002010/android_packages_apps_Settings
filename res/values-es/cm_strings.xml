@@ -660,6 +660,7 @@ podrás crear una nueva línea con el fin de insertar puntos de control adiciona
     <string name="privacy_guard_dlg_system_app_text">Cuando la privacidad está habilitada para una aplicación de sistema, la aplicación no podrá acceder a los datos personales, tales como contactos, mensajes o registros de llamadas. Esto puede causar un comportamiento anómalo en otras aplicaciones.</string>
     <string name="privacy_guard_default_title">Privacidad</string>
     <string name="privacy_guard_default_summary">Habilitar la privacidad por defecto para nuevas aplicaciones</string>
+
     <string name="privacy_guard_manager_title">Privacidad</string>
     <string name="privacy_guard_manager_summary">Gestionar las aplicaciones que podrán acceder a los datos personales</string>
     <string name="privacy_guard_no_user_apps">No hay aplicaciones instaladas</string>
@@ -727,4 +728,18 @@ podrás crear una nueva línea con el fin de insertar puntos de control adiciona
     <string name="title_quick_access_linked">Disposición vinculada</string>
     <string name="summary_quick_access_linked">Usar la misma disposición que en el panel de ajustes rápidos</string>
     <string name="font_size_sample">Muestra</string>
+
+    <!-- HALO -->
+    <string name="app_halo_label_black">Lista negra de HALO</string>
+    <string name="app_halo_label_white">Lista blanca de HALO</string>    
+    <string name="halo_category">HALO</string>
+    <string name="halo_control_title">Ajustes HALO</string>
+    <string name="halo_hide_title">Ocultar HALO</string>
+    <string name="halo_hide_summary">HALO aparecerá al llegar una notificación y se ocultará después de un tiempo</string>
+    <string name="halo_reversed_title">Invertir gestos HALO</string>
+    <string name="halo_reversed_summary">Arrastrar HALO con un toque simple e interactuar con él con un doble toque</string>
+    <string name="halo_state_title">Política de HALO</string>
+    <string name="halo_state_summary">Agrupar aplicaciones en la lista Negra/Blanca de HALO</string>
+    <string name="halo_state_black">Lista Negra</string>
+    <string name="halo_state_white">Lista Blanca</string>
 </resources>
