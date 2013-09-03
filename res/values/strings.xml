@@ -4539,6 +4539,7 @@
     <string name="regulatory_info_text"></string>
 
     <!-- HALO -->
+    <string name="halo_category">HALO</string>
     <string name="halo_control_title">Halo options</string>
     <string name="halo_hide_title">Hide HALO after activity</string>
     <string name="halo_hide_summary">HALO will appear for incoming tasks and scroll out of sight after a while</string>
