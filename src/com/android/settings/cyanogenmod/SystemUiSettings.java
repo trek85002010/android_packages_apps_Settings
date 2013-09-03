@@ -20,14 +20,10 @@ import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.RemoteException;
-import android.os.SystemProperties;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
-import android.preference.PreferenceActivity;
-import android.preference.PreferenceGroup;
-import android.preference.PreferenceScreen; 
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.util.Log;
@@ -35,8 +31,6 @@ import android.view.WindowManagerGlobal;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.util.CMDProcessor;
-import com.android.settings.util.Helpers; 
 
 public class SystemUiSettings extends SettingsPreferenceFragment  implements
         Preference.OnPreferenceChangeListener {
@@ -53,10 +47,6 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
     private ListPreference mExpandedDesktopPref;
     private CheckBoxPreference mExpandedDesktopNoNavbarPref;
     private ListPreference mNavButtonsHeight;
-
-    Preference mLcdDensity;
-    int newDensityValue;
-    DensityChanger densityFragment; 
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -105,17 +95,6 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
         } catch (RemoteException e) {
             Log.e(TAG, "Error getting navigation bar status");
         }
-
-        mLcdDensity = findPreference("lcd_density_setup");
-        String currentProperty = SystemProperties.get("ro.sf.lcd_density");
-        try {
-            newDensityValue = Integer.parseInt(currentProperty);
-        } catch (Exception e) {
-            getPreferenceScreen().removePreference(mLcdDensity);
-        }
-
-        mLcdDensity.setSummary(getResources().getString(R.string.current_lcd_density) + currentProperty);
-
     }
 
     @Override
@@ -144,17 +123,6 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
         return false;
     }
 
-    @Override
-    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        if (preference == mUseAltResolver) {
-            Settings.System.putBoolean(getActivity().getContentResolver(),
-                    Settings.System.ACTIVITY_RESOLVER_USE_ALT,
-                    mUseAltResolver.isChecked());
-            return true;
-        } else if (preference == mLcdDensity) {
-            ((PreferenceActivity) getActivity())
-            .startPreferenceFragment(new DensityChanger(), true);
-            return true;
     private void updatePieControlSummary() {
         if (mPieControl != null) {
             boolean enabled = Settings.System.getInt(getContentResolver(),
