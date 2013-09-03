@@ -56,8 +56,6 @@ public class AnonymousStats extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.anonymous_stats);
-
         mPrefs = getPreferences(getActivity());
 
         PreferenceScreen prefSet = getPreferenceScreen();

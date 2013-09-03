@@ -116,11 +116,7 @@ public class SettingsPreferenceFragment extends PreferenceFragment implements Di
      * Returns the ContentResolver from the owning Activity.
      */
     protected ContentResolver getContentResolver() {
-        Context context = getActivity();
-        if (context != null) {
-            mContentResolver = context.getContentResolver();
-        }
-        return mContentResolver;
+        return getActivity().getContentResolver();
     }
 
     /**
