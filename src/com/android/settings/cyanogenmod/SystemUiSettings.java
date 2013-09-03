@@ -48,13 +48,11 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
     private static final String KEY_NAV_BUTTONS_HEIGHT = "nav_buttons_height";
     private static final String CATEGORY_NAVBAR = "navigation_bar";
     private static final String KEY_PIE_CONTROL = "pie_control";
-    private static final String KEY_USE_ALT_RESOLVER = "use_alt_resolver";
 
     private PreferenceScreen mPieControl;
     private ListPreference mExpandedDesktopPref;
     private CheckBoxPreference mExpandedDesktopNoNavbarPref;
     private ListPreference mNavButtonsHeight;
-    private CheckBoxPreference mUseAltResolver;
 
     Preference mLcdDensity;
     int newDensityValue;
@@ -108,8 +106,6 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
             Log.e(TAG, "Error getting navigation bar status");
         }
 
-	mUseAltResolver = (CheckBoxPreference) findPreference(KEY_USE_ALT_RESOLVER);
-
         mLcdDensity = findPreference("lcd_density_setup");
         String currentProperty = SystemProperties.get("ro.sf.lcd_density");
         try {
@@ -151,14 +147,14 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if (preference == mUseAltResolver) {
-                    mUseAltResolver.isChecked())
+            Settings.System.putBoolean(getActivity().getContentResolver(),
+                    Settings.System.ACTIVITY_RESOLVER_USE_ALT,
+                    mUseAltResolver.isChecked());
             return true;
         } else if (preference == mLcdDensity) {
             ((PreferenceActivity) getActivity())
             .startPreferenceFragment(new DensityChanger(), true);
             return true;
-    }
-    }
     private void updatePieControlSummary() {
         if (mPieControl != null) {
             boolean enabled = Settings.System.getInt(getContentResolver(),
