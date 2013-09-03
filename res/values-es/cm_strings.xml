@@ -292,7 +292,7 @@
     <string name="link_volume_ringtones">Vincular volúmenes</string>
     <string name="link_volume_mutes">Vincular silencio</string>
     <string name="volume_keys_control_ring_stream">Controlar volumen de llamada</string>
-    <string name="display_lights_settings_title">Pantalla y leds</string>
+    <string name="display_lights_settings_title">Pantalla y Leds</string>
     <string name="lights_category_title">Leds</string>
     <string name="notification_pulse_title">Led de notificación</string>
     <string name="notification_light_general_title">General</string>
